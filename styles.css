@@ -27,6 +27,7 @@ main {
   width: 100%;
   margin: 0px auto 10px;
   background-color: lightcyan;
+  position: -webkit-fixed;
   position: fixed;
   top: 0;
   left: 0;
@@ -93,6 +94,7 @@ body {
     max-width: 100%;
     box-shadow: none;
     background-color: #FC466B;
+    position: -webkit-fixed; 
     position: fixed;
     height: 60px!important;
     overflow: hidden;
@@ -119,6 +121,7 @@ body {
 }
 #sidebarMenu {
     height: 100%;
+    position: -webkit-fixed;
     position: fixed;
     left: 0;
     width: 250px;
