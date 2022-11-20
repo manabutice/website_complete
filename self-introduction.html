@@ -25,7 +25,7 @@
       <li><a href="https://newspicks.com/" target="_blank">newspicks</a><span>情報</span></li>
     </ul>
   </div>
-
+  
       <li class="menu__item">
         <a href="" class="menu__link">マークダウン記法</a>
         <ul class="drop-menu">
@@ -96,6 +96,39 @@
     <h2>検索作業時間を短縮してみよう！！</h2>
     <h3>🔍Qiita記事検索ツールを使って調べてみよう</h3>
     <h4>[詳細]Qiitaの投稿検索APIを使って、記事のリアルタイムサーチ。</h4>
+     <!-- モーダル -->
+     <button class="btn">Qiita API解説</button>
+     <!-- The Modal -->
+     <div id="myModal" class="modal">
+       <!-- Modal content -->
+       <div class="modal-content">
+         <div class="modal-content-left">
+           <img src="https://smallit.co.jp/wp-content/uploads/2021/12/md1.png">
+         </div>
+         <div class="modal-content-right">
+           <div class="modal-header">
+             <p>APIとは（APIを使うメリット）</p>
+             <span class="modalClose">×</span>
+           </div>
+     <!-- modalInner -->
+           <div class="modal-body">
+             <p>APIは「Application Programming Interface」の略です。
+              <br>直訳すると以下の様になります。
+              <br>アプリケーション（Application）を
+              <br>プログラミング（Programming）を使って
+              <br>繋ぐ（Interface）
+              <br>※Applicationは「Webサービス」「システム」<br>といった意味です。</p>
+             <p>もう少し深ぼりすると、APIが必要とされる最大の利点は
+              <br>『自分が作ったWebサービスに、<br>他の人が作った便利な機能を借りてくる』
+              <br>自分でクレジット決済機能を作る
+              <br>カード会社が提供しているクレジット決済APIを使う
+              <br>このように「自分で作らない」<br>という選択肢がAPIの最大メリットです。</p>
+           </div>
+     <!-- modalInner -->
+         </div>
+       </div>
+     </div>
+         <!-- モーダル -->
     <p>
       <div class="button_solid006">
         <a href="file:///Users/murakamimanabu/work_space/css-study/self-introduction/udemy%20vue3%20session5%202%202/index.html">
@@ -107,9 +140,33 @@
     <h3>マークダウン記法で書いてみよう！</h3>
     <h3>マークダウン記法って何？</h3>
     <iframe width="330" height="215" src="https://www.youtube.com/embed/unIzARyMVYA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-    
-    
-
+    <!-- モーダル -->
+    <button class="btn">マークダウン解説</button>
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-content-left">
+      <img src="https://smallit.co.jp/wp-content/uploads/2021/12/md1.png">
+    </div>
+    <div class="modal-content-right">
+      <div class="modal-header">
+        <p>マークダウンとは</p>
+        <span class="modalClose">×</span>
+      </div>
+<!-- modalInner -->
+      <div class="modal-body">
+        <p>会議の議事録や社内ドキュメント、自分用のメモを効率化するのにおすすめなのが「マークダウン(記法)」です。
+          <br>マークダウン記法を使うことで、見出しや強調などの文字装飾が簡単にできるので、
+          すぐに読みやすい文書が作成でき、<br>業務効率が上がります。</p>
+        <p>マークダウンとは、アメリカ合衆国、フィラデルフィア出身のライター・コラムニストである<br>ジョン・グルーバー（John Gruber）によって、<br>2004年に開発された「フォーマット」のことを指します。
+          <br>デジタル文章を作るときに使うHTML（HyperText Markup Language）などのマークアップ言語を、簡略化できるようにプログラムされました。</p>
+      </div>
+<!-- modalInner -->
+    </div>
+  </div>
+</div>
+    <!-- モーダル -->
       <p>
         <div class="button_solid006">
           <a href="file:///Users/murakamimanabu/work_space/css-study/self-introduction/memo/index.html">メモ帳</a>
@@ -117,7 +174,7 @@
       </p>
     </div>
   </div>
-
+  <script src="modal.js"></script>
     </body>
   </html>
 

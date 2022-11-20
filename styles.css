@@ -254,3 +254,160 @@ background:#FF8282;
 box-shadow: 0 0px 10px #FF8282;
 box-shadow: 0 5px 0px #CC6262,0 4px 10px #FF8282;
 }
+/* モーダル */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 0.4s ease-out;
+}
+
+.modal-content {
+  position: relative;
+  margin: auto;
+  padding: 0;
+  width: 95%;
+  max-width: 60rem;
+  border-radius: 2px;
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.08);
+  -moz-box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.08);
+  box-shadow: 0px 0px 19px 3px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: center;
+}
+
+.modal-content-left,
+.modal-content-right {
+  flex: 0 1 auto;
+}
+
+.modal-content-left {
+  flex: 2;
+}
+
+.modal-content-left img {
+  width: 40rem;
+  max-width: 95%;
+  margin: 0;
+  padding: 0;
+  display: block;
+  border-radius: 2px;
+}
+
+.modal-content-right {
+  flex: 2;
+  max-width: 100%;
+  padding: 1rem 2rem 1rem 1rem;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+/* The Close Button */
+.modalClose,
+.close-imp {
+  color: #aaa;
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0 1.5rem;
+  border-radius: 2px;
+  transition: 0.4s ease-out;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.modalClose:hover,
+.modalClose:focus,
+.close-imp:hover,
+.close-imp:focus {
+  color: #111;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  font-size: 2.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.modal-header p {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+/* The Button */
+
+.btn {
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    padding: 10px 25px;
+    color: #313131;
+    transition: 0.3s ease-in-out;
+    font-weight: 600;
+    background: #f0db40;
+    filter: drop-shadow(0px 2px 4px #ccc);
+    border-radius: 3px;
+    letter-spacing: 0.04rem;
+}
+
+.btn:hover {
+   transform: translateY(-2px);
+    box-shadow: 0 15px 30px -5px rgb(0 0 0 / 15%), 0 0 5px rgb(0 0 0 / 10%);
+}
+
+@media screen and (max-width: 767px) {
+/* （ここにモバイル用スタイルを記述） */
+.modal-content {
+    flex-direction: column;
+    margin-bottom: 50px;
+    width: 80%;
+}
+.modal-content-left img {
+    max-width: 100%;
+}
+.modal-content-right {
+    padding: 20px 25px 10px;
+}
+}
