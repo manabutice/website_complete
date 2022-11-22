@@ -93,3 +93,4 @@ function editNote(main, textArea) {
   main.classList.toggle('hidden')
   textArea.classList.toggle('hidden')
 }
+
